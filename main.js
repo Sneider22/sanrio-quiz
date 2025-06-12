@@ -19,9 +19,8 @@ const questions = [
             { answer: "Comida saludable", img: "saludable.png", points: { "Hello Kitty": 1, "My Melody": 1, "Cinnamoroll": 1, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
             { answer: "Rollos de canela", img: "rollos_canela.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
             { answer: "Comida japonesa", img: "japonesa.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
-            { answer: "Hamburguesa", img: "hamburguesa.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Pizza", img: "pizza.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
-            { answer: "Pastel de chocolate", img: "pastel_chocolate.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Pies", img: "pies.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Pasteles", img: "pasteles.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
             { answer: "Pudín", img: "pudin.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
             { answer: "Comida rápida", img: "comida_rapida.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } }
         ]
@@ -114,32 +113,19 @@ function displayQuestion(index) {
     if (!Array.isArray(answers[index])) answers[index] = [];
 
     question.options.forEach((option, i) => {
+        // Crea el recuadro de la opción
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
         optionDiv.onclick = () => toggleOption(index, i);
 
-        // Haz el div más alto
-        optionDiv.style.minHeight = '90px'; // antes era menos, ahora más alto
-        optionDiv.style.display = 'flex';
-        optionDiv.style.flexDirection = 'column';
-        optionDiv.style.alignItems = 'center';
-        optionDiv.style.justifyContent = 'center';
-
-        // Imagen más ancha y alta
+        // El recuadro solo tendrá la imagen
         if (option.img) {
             const img = document.createElement('img');
             img.src = `assets/${option.img}`;
             img.alt = option.answer;
-            img.style.width = '80px';   // más ancho
-            img.style.height = '60px';  // más alto
-            img.style.objectFit = 'contain';
-            img.style.marginBottom = '8px';
+            img.className = 'option-img'; // Para estilos
             optionDiv.appendChild(img);
         }
-
-        const label = document.createElement('span');
-        label.textContent = option.answer;
-        optionDiv.appendChild(label);
 
         // Marca las opciones seleccionadas
         if (answers[index].includes(i)) {
@@ -147,7 +133,18 @@ function displayQuestion(index) {
             optionDiv.style.boxShadow = '0 0 0 4px #e0c3fc';
         }
 
-        optionsContainer.appendChild(optionDiv);
+        // Contenedor para recuadro + nombre
+        const wrapper = document.createElement('div');
+        wrapper.className = 'option-wrapper';
+        wrapper.appendChild(optionDiv);
+
+        // Nombre debajo del recuadro
+        const label = document.createElement('div');
+        label.className = 'option-label';
+        label.textContent = option.answer;
+        wrapper.appendChild(label);
+
+        optionsContainer.appendChild(wrapper);
     });
 
     // Botones
