@@ -2,14 +2,14 @@ const questions = [
     {
         question: "¿Cuál es tu color favorito?",
         options: [
-            { answer: "Rojo", color: "#ff0000", points: { "Hello Kitty": 0, "My Melody": 3, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Rosado", color: "#ffb6c1", points: { "Hello Kitty": 3, "My Melody": 1, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Azul", color: "#2196f3", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Verde", color: "#4caf50", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 3, "Badtz-Maru": 0 } },
-            { answer: "Negro", color: "#222", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 2, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
-            { answer: "Blanco", color: "#fff", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 3, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
-            { answer: "Amarillo", color: "#ffe066", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Morado", color: "#a259f7", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 1 } }
+            { answer: "Rojo", img: "rojo.png", points: { "Hello Kitty": 2, "My Melody": 1, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Rosado", img: "rosado.png", points: { "Hello Kitty": 1, "My Melody": 3, "Cinnamoroll": 1, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Azul", img: "azul.png", points: { "Hello Kitty": 0.5, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 1, "Tuxedo Sam": 3, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0.5, "Keroppi": 1, "Badtz-Maru": 1 } },
+            { answer: "Verde", img: "verde.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0.5, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 3, "Badtz-Maru": 0 } },
+            { answer: "Negro", img: "negro.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 2, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } },
+            { answer: "Blanco", img: "blanco.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 1, "Pochacco": 2, "Kuromi": 1.5, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 1.5 } },
+            { answer: "Amarillo", img: "amarillo.png", points: { "Hello Kitty": 0.5, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Morado", img: "morado.png", points: { "Hello Kitty": 0.5, "My Melody": 0.5, "Cinnamoroll": 0.5, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 1 } }
         ]
     },
     {
