@@ -4,7 +4,7 @@ const questions = [
         options: [
             { answer: "Rojo", img: "rojo.png", points: { "Hello Kitty": 3, "My Melody": 1.5, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
             { answer: "Rosado", img: "rosado.png", points: { "Hello Kitty": 2, "My Melody": 3, "Cinnamoroll": 1.5, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0.5, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Azul", img: "azul.png", points: { "Hello Kitty": 1, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 1, "Tuxedo Sam": 3, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0.5, "Keroppi": 1, "Badtz-Maru": 1 } },
+            { answer: "Azul", img: "azul.png", points: { "Hello Kitty": 1, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 1, "Tuxedo Sam": 3, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0.5, "Keroppi": 1, "Badtz-Maru": 3 } },
             { answer: "Verde", img: "verde.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 1, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 1, "Keroppi": 3, "Badtz-Maru": 0 } },
             { answer: "Negro", img: "negro.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 2, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } },
             { answer: "Blanco", img: "blanco.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 1, "Pochacco": 2, "Kuromi": 1.5, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 1.5 } },
@@ -15,14 +15,14 @@ const questions = [
     {
         question: "¿Qué tipo de comida prefieres?",
         options: [
-            { answer: "Galletas", img: "galletas.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 1, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Comida saludable", img: "saludable.png", points: { "Hello Kitty": 1, "My Melody": 1, "Cinnamoroll": 1, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Rollos de canela", img: "rollos_canela.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Comida japonesa", img: "japonesa.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
-            { answer: "Pies", img: "pies.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
-            { answer: "Pasteles", img: "pasteles.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Pudín", img: "pudin.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Comida rápida", img: "comida_rapida.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } }
+            { answer: "Galletas", img: "galletas.png", points: { "Hello Kitty": 3, "My Melody": 3, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Comida saludable", img: "saludable.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 2, "Chococat": 3, "Tuxedo Sam": 1, "Pochacco": 0, "Kuromi": 2.5, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Rollos de canela", img: "rollos_canela.png", points: { "Hello Kitty": 1.5, "My Melody": 1.5, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Comida japonesa", img: "japonesa.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 1, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 1.5 } },
+            { answer: "Pies", img: "pies.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 2.5, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 2.5, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Pasteles", img: "pasteles.png", points: { "Hello Kitty": 2.5, "My Melody": 2.5, "Cinnamoroll": 3, "Chococat": 1, "Tuxedo Sam": 1, "Pochacco": 2, "Kuromi": 3, "Pompompurin": 3, "Keroppi": 2.5, "Badtz-Maru": 1 } },
+            { answer: "Pudín", img: "pudin.png", points: { "Hello Kitty": 1.5, "My Melody": 1.5, "Cinnamoroll": 2, "Chococat": 1, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 1, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Comida rápida", img: "comida_rapida.png", points: { "Hello Kitty": 0.5, "My Melody": 1, "Cinnamoroll": 0.5, "Chococat": 1.5, "Tuxedo Sam": 0.5, "Pochacco": 2.5, "Kuromi": 1.5, "Pompompurin": 1.5, "Keroppi": 1.5, "Badtz-Maru": 3 } }
         ]
     },
     {
