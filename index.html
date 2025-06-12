@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanrio Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top-bar">
-        ¿Qué personaje de Sanrio eres?
+        ¿Qué personaje de Sanrio eres BRO?
     </div>
     <div class="quiz-container">
         <div id="question-container">
@@ -27,22 +28,22 @@
                     <p id="result-percentage"></p>
                 </div>
                 <div style="flex: 1 1 220px; min-width: 220px; max-width: 320px;">
-                    <h3 id="chart-title" style="text-align:center;color:#007cf080;font-size:20px;margin-bottom:10px;margin-top:24px;">
+                    <h3 id="chart-title" style="text-align:center;color:#6a11cb;font-size:20px;margin-bottom:10px;margin-top:24px;">
                         Porcentaje de afinidad
                     </h3>
                     <canvas id="result-chart" width="220" height="220"></canvas>
                     <div id="top3-labels" style="margin-top: 18px; text-align: center;"></div>
                 </div>
             </div>
-            <button id="restart-button" class="button" type="button">
+            <button id="restart-button" style="margin: 32px auto 0 auto; display: block; background: #a259f7; color: #fff; border: none; border-radius: 12px; padding: 12px 32px; font-size: 18px; font-weight: bold; cursor: pointer;">
                 Reiniciar quiz
             </button>
         </div>
     </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <div class="bottom-bar">
         Idea de Sinai ♥
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="main.js"></script>
 </body>
 </html>
