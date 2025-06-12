@@ -77,11 +77,12 @@ h1, #question {
 }
 
 .option img {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    margin-bottom: 8px;
-    filter: drop-shadow(0 2px 6px #a259f7aa);
+    margin-bottom: 6px;
+    display: block;
+    background: transparent;
 }
 
 .option span {
@@ -141,6 +142,18 @@ h1, #question {
     margin-top: 24px;
 }
 
+.hidden {
+  display: none;
+}
+
+#result-chart {
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px #a259f7a0;
+}
+
 @media (max-width: 600px) {
     .quiz-container {
         max-width: 98vw;
@@ -152,8 +165,8 @@ h1, #question {
         height: 90px;
     }
     .option img {
-        width: 32px;
-        height: 32px;
+        width: 60px;
+        height: 60px;
     }
     .top-bar {
         font-size: 1.1rem;

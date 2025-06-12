@@ -20,15 +20,21 @@
             <button id="next-button" class="button" type="button">Siguiente</button>
         </div>
         <div id="result-container" class="hidden">
-            <h2>Tu personaje es:</h2>
-            <div id="result-card" class="result-card">
-                <img id="result-image" src="" alt="Personaje Sanrio">
-                <h3 id="result-name"></h3>
-                <p id="result-description"></p>
-                <p id="result-percentage"></p>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; gap: 24px;">
+                <div class="result-card" style="flex: 1 1 220px; min-width: 220px;">
+                    <img id="result-main-img" src="" alt="Personaje principal" style="width:90px;height:90px;object-fit:contain;border-radius:18px;border:3px solid #a259f7;background:#fff;box-shadow:0 2px 12px #a259f7a0;display:block;margin:0 auto 12px auto;">
+                    <h2>Tu personaje es: <span id="result-name"></span></h2>
+                    <p id="result-description"></p>
+                    <p id="result-percentage"></p>
+                </div>
+                <div style="flex: 1 1 220px; min-width: 220px; max-width: 320px;">
+                    <canvas id="result-chart" width="220" height="220"></canvas>
+                    <div id="top3-labels" style="margin-top: 18px; text-align: center;"></div>
+                </div>
             </div>
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

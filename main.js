@@ -2,54 +2,86 @@ const questions = [
     {
         question: "¿Cuál es tu color favorito?",
         options: [
-            { answer: "Rojo", color: "#ff0000", points: { "Hello Kitty": 2, "My Melody": 1, "Cinnamoroll": 0 } },
-            { answer: "Rosado", color: "#ffb6c1", points: { "Hello Kitty": 2, "My Melody": 3, "Cinnamoroll": 1 } },
-            { answer: "Azul", color: "#2196f3", points: { "Cinnamoroll": 2, "Pompompurin": 1, "Keroppi": 0 } },
-            { answer: "Verde", color: "#4caf50", points: { "Keroppi": 2, "Pompompurin": 1, "Badtz-Maru": 0 } },
-            { answer: "Negro", color: "#222", points: { "Badtz-Maru": 3, "Keroppi": 1, "Hello Kitty": 0 } },
-            { answer: "Blanco", color: "#fff", points: { "Cinnamoroll": 2, "Hello Kitty": 2, "My Melody": 1 } },
-            { answer: "Amarillo", color: "#ffe066", points: { "Pompompurin": 3, "Keroppi": 1, "Cinnamoroll": 0 } },
-            { answer: "Morado", color: "#a259f7", points: { "Badtz-Maru": 2, "My Melody": 1, "Hello Kitty": 0 } }
+            { answer: "Rojo", color: "#ff0000", points: { "Hello Kitty": 0, "My Melody": 3, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Rosado", color: "#ffb6c1", points: { "Hello Kitty": 3, "My Melody": 1, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Azul", color: "#2196f3", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Verde", color: "#4caf50", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 3, "Badtz-Maru": 0 } },
+            { answer: "Negro", color: "#222", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 2, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
+            { answer: "Blanco", color: "#fff", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 3, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
+            { answer: "Amarillo", color: "#ffe066", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Morado", color: "#a259f7", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 1 } }
         ]
     },
     {
         question: "¿Qué tipo de comida prefieres?",
         options: [
-            { answer: "Dulces", img: "dulces.png", points: { "My Melody": 2, "Hello Kitty": 1, "Cinnamoroll": 0 } },
-            { answer: "Salado", img: "salado.png", points: { "Pompompurin": 2, "Badtz-Maru": 1, "Keroppi": 0 } },
-            { answer: "Frutas", img: "frutas.png", points: { "Cinnamoroll": 2, "My Melody": 1, "Hello Kitty": 0 } },
-            { answer: "Comida rápida", img: "comida_rapida.png", points: { "Badtz-Maru": 2, "Pompompurin": 1, "Keroppi": 0 } },
-            { answer: "Helado", img: "helado.png", points: { "Cinnamoroll": 2, "My Melody": 1, "Hello Kitty": 1 } },
-            { answer: "Sushi", img: "sushi.png", points: { "Keroppi": 2, "Badtz-Maru": 1, "Pompompurin": 0 } },
-            { answer: "Pastel", img: "pastel.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 1 } },
-            { answer: "Pan", img: "pan.png", points: { "Pompompurin": 2, "Cinnamoroll": 1, "Hello Kitty": 0 } },
-            { answer: "Pizza", img: "pizza.png", points: { "Badtz-Maru": 2, "Keroppi": 1, "Pompompurin": 1 } }
+            { answer: "Galletas", img: "galletas.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 1, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Comida saludable", img: "saludable.png", points: { "Hello Kitty": 1, "My Melody": 1, "Cinnamoroll": 1, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Rollos de canela", img: "rollos_canela.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 3, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Comida japonesa", img: "japonesa.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Hamburguesa", img: "hamburguesa.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Pizza", img: "pizza.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
+            { answer: "Pastel de chocolate", img: "pastel_chocolate.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Pudín", img: "pudin.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Comida rápida", img: "comida_rapida.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } }
+        ]
+    },
+    {
+        question: "¿Cómo describes tu personalidad?",
+        options: [
+            { answer: "Amigable", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 2, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Aventurero/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Inteligente y analítico/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Travieso/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 2, "Pochacco": 0, "Kuromi": 2, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Enérgico/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 1, "Badtz-Maru": 0 } },
+            { answer: "Rebelde y divertido/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } }
         ]
     },
     {
         question: "¿Cuál es tu deporte favorito?",
         options: [
-            { answer: "Fútbol", img: "futbol.png", points: { "Keroppi": 2, "Badtz-Maru": 1 } },
-            { answer: "Básquet", img: "basket.png", points: { "Badtz-Maru": 2, "Pompompurin": 1 } },
-            { answer: "Natación", img: "natacion.png", points: { "Cinnamoroll": 2, "Keroppi": 1 } },
-            { answer: "Béisbol", img: "beisbol.png", points: { "Hello Kitty": 2, "Pompompurin": 1 } },
-            { answer: "Correr", img: "correr.png", points: { "My Melody": 2, "Cinnamoroll": 1 } },
-            { answer: "Bailar", img: "bailar.png", points: { "My Melody": 2, "Hello Kitty": 1 } },
-            { answer: "Yoga", img: "yoga.png", points: { "Cinnamoroll": 2, "My Melody": 1 } },
-            { answer: "Ninguno", img: "ninguno.png", points: { "Badtz-Maru": 2 } }
+            { answer: "Patinaje", img: "patinaje.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 2, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Baile", img: "baile.png", points: { "Hello Kitty": 0, "My Melody": 2, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Natación", img: "natacion.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 1, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Golf", img: "golf.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 2, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Béisbol", img: "beisbol.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Fútbol", img: "futbol.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Deportes extremos", img: "extremos.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
+            { answer: "Skateboard", img: "skateboard.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
+            { answer: "Paseos al aire libre", img: "paseos.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 3, "Keroppi": 0, "Badtz-Maru": 0 } }
         ]
     },
     {
         question: "¿Cuál es tu pasatiempo favorito?",
         options: [
-            { answer: "Leer", img: "leer.png", points: { "Hello Kitty": 2, "Cinnamoroll": 1 } },
-            { answer: "Escuchar música", img: "musica.png", points: { "My Melody": 2, "Cinnamoroll": 1 } },
-            { answer: "Cocinar", img: "cocinar.png", points: { "Pompompurin": 2, "Hello Kitty": 1 } },
-            { answer: "Dibujar", img: "dibujar.png", points: { "My Melody": 2, "Hello Kitty": 1 } },
-            { answer: "Jugar videojuegos", img: "videojuegos.png", points: { "Badtz-Maru": 2, "Keroppi": 1 } },
-            { answer: "Salir con amigos", img: "amigos.png", points: { "Keroppi": 2, "Pompompurin": 1 } },
-            { answer: "Ver películas", img: "peliculas.png", points: { "Cinnamoroll": 2, "My Melody": 1 } },
-            { answer: "Dormir", img: "dormir.png", points: { "Pompompurin": 2, "Badtz-Maru": 1 } }
+            { answer: "Cocinar", img: "cocinar.png", points: { "Hello Kitty": 2, "My Melody": 0, "Cinnamoroll": 1, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Manualidades", img: "manualidades.png", points: { "Hello Kitty": 1, "My Melody": 2, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Escuchar música", img: "musica.png", points: { "Hello Kitty": 0, "My Melody": 2, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 2, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Leer", img: "leer.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Hacer pasteles", img: "pasteles.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Dibujar", img: "dibujar.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 2, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Experimentar con ciencia", img: "ciencia.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 2, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Jugar videojuegos", img: "videojuegos.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 3, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } },
+            { answer: "Jugar al aire libre", img: "aire_libre.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 3, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Cosplay", img: "cosplay.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 2, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Ver películas", img: "peliculas.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 2, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Pasear", img: "pasear.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 2, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Pescar", img: "pescar.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Coleccionar cosas", img: "coleccionar.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
+            { answer: "Hacer skate", img: "skate.png", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 2 } }
+        ]
+    },
+    {
+        question: "¿Cuál de estos lugares te gusta más?",
+        options: [
+            { answer: "Jardín", points: { "Hello Kitty": 3, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Bosque", points: { "Hello Kitty": 0, "My Melody": 3, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Playa", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 0, "Tuxedo Sam": 2, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Montañas", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Parque", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 2, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Noche estrellada", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 3, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
+            { answer: "Lago", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 3, "Badtz-Maru": 0 } },
+            { answer: "Noche oscura", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } }
         ]
     }
 ];
@@ -60,10 +92,14 @@ let scores = {
     "Cinnamoroll": 0,
     "Pompompurin": 0,
     "Keroppi": 0,
-    "Badtz-Maru": 0
+    "Badtz-Maru": 0,
+    "Chococat": 0,
+    "Tuxedo Sam": 0,
+    "Pochacco": 0,
+    "Kuromi": 0
 };
 let currentQuestion = 0;
-let answers = []; // Guarda la opción seleccionada por pregunta
+let answers = []; // Ahora cada elemento será un array de índices seleccionados
 
 function displayQuestion(index) {
     const question = questions[index];
@@ -72,10 +108,13 @@ function displayQuestion(index) {
     const optionsContainer = document.getElementById('options-container');
     optionsContainer.innerHTML = '';
 
+    // Inicializa el array si no existe
+    if (!Array.isArray(answers[index])) answers[index] = [];
+
     question.options.forEach((option, i) => {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
-        optionDiv.onclick = () => selectOption(i);
+        optionDiv.onclick = () => toggleOption(index, i);
 
         // Para colores
         if (option.color) {
@@ -93,8 +132,8 @@ function displayQuestion(index) {
         label.textContent = option.answer;
         optionDiv.appendChild(label);
 
-        // Marca la opción seleccionada
-        if (answers[index] === i) {
+        // Marca las opciones seleccionadas
+        if (answers[index].includes(i)) {
             optionDiv.style.outline = '3px solid #6a11cb';
             optionDiv.style.boxShadow = '0 0 0 4px #e0c3fc';
         }
@@ -107,33 +146,35 @@ function displayQuestion(index) {
     document.getElementById('next-button').textContent = (index === questions.length - 1) ? 'Ver resultado' : 'Siguiente';
 }
 
-function selectOption(optionIndex) {
-    answers[currentQuestion] = optionIndex;
-    if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-        displayQuestion(currentQuestion);
+function toggleOption(qIndex, optionIndex) {
+    if (!Array.isArray(answers[qIndex])) answers[qIndex] = [];
+    const idx = answers[qIndex].indexOf(optionIndex);
+    if (idx > -1) {
+        answers[qIndex].splice(idx, 1); // Quitar si ya está
     } else {
-        calculateScores();
-        showResult();
+        answers[qIndex].push(optionIndex); // Agregar si no está
     }
+    displayQuestion(qIndex);
 }
 
 function calculateScores() {
     // Reinicia los scores
     for (let key in scores) scores[key] = 0;
-    answers.forEach((optionIndex, qIndex) => {
-        if (optionIndex !== undefined) {
-            const points = questions[qIndex].options[optionIndex].points;
-            for (const character in points) {
-                scores[character] += points[character];
-            }
+    answers.forEach((selectedIndices, qIndex) => {
+        if (Array.isArray(selectedIndices)) {
+            selectedIndices.forEach(optionIndex => {
+                const points = questions[qIndex].options[optionIndex].points;
+                for (const character in points) {
+                    scores[character] += points[character];
+                }
+            });
         }
     });
 }
 
 document.getElementById('next-button').onclick = function() {
-    if (answers[currentQuestion] === undefined) {
-        alert('Por favor selecciona una opción antes de continuar.');
+    if (!answers[currentQuestion] || answers[currentQuestion].length === 0) {
+        alert('Por favor selecciona al menos una opción antes de continuar.');
         return;
     }
     if (currentQuestion < questions.length - 1) {
@@ -158,16 +199,88 @@ function showResult() {
     const resultContainer = document.getElementById('result-container');
     resultContainer.classList.remove('hidden');
 
-    const maxScore = Math.max(...Object.values(scores));
-    const resultCharacter = Object.keys(scores).find(character => scores[character] === maxScore);
+    // Ordenar personajes por puntaje
+    const sorted = Object.entries(scores)
+        .map(([name, value]) => ({ name, value }))
+        .sort((a, b) => b.value - a.value);
+
+    const totalPoints = sorted.reduce((a, b) => a + b.value, 0) || 1;
+    const top3 = sorted.slice(0, 3);
+
+    // Principal
+    const resultCharacter = top3[0].name;
+    const percentage = Math.round((top3[0].value / totalPoints) * 100);
 
     document.getElementById('result-name').textContent = resultCharacter;
-    document.getElementById('result-description').textContent = "Descripción del personaje aquí.";
-    document.getElementById('result-percentage').textContent = "Porcentaje aquí.";
-    // document.getElementById('result-image').src = "ruta/a/imagen.png";
+    document.getElementById('result-description').textContent = characterDescriptions[resultCharacter] || "";
+    document.getElementById('result-percentage').textContent = `Afinidad: ${percentage}%`;
+
+    // Imagen principal
+    const mainImgName = resultCharacter.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') + '.png';
+    document.getElementById('result-main-img').src = `assets/${mainImgName}`;
+    document.getElementById('result-main-img').alt = resultCharacter;
+
+    // Gráfico de torta con los 3 principales
+    const ctx = document.getElementById('result-chart').getContext('2d');
+    if (window.resultChart) window.resultChart.destroy(); // Borra gráfico anterior si existe
+    window.resultChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: top3.map(t => t.name),
+            datasets: [{
+                data: top3.map(t => Math.round((t.value / totalPoints) * 100)),
+                backgroundColor: [
+                    '#a259f7', '#6a11cb', '#ffe066'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { display: false }
+            },
+            cutout: '65%',
+            responsive: false
+        }
+    });
+
+    // Muestra los nombres y porcentajes de los otros dos personajes
+    let labelsHtml = '';
+    for (let i = 1; i < top3.length; i++) {
+        labelsHtml += `<div style="font-size:15px;color:#6a11cb;font-weight:600;margin-bottom:6px;">
+            ${i+1}. ${top3[i].name}: ${Math.round((top3[i].value / totalPoints) * 100)}%
+        </div>`;
+    }
+    document.getElementById('top3-labels').innerHTML = labelsHtml;
+
+    let imagesHtml = '';
+    for (let i = 1; i < top3.length; i++) {
+        // Convierte el nombre a minúsculas y reemplaza espacios por guiones bajos
+        const imgName = top3[i].name.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') + '.png';
+        imagesHtml += `
+            <div style="display:inline-block;margin:0 10px;text-align:center;">
+                <img src="assets/${imgName}" alt="${top3[i].name}" style="width:54px;height:54px;object-fit:contain;border-radius:12px;border:2px solid #a259f7;background:#fff;box-shadow:0 2px 8px #a259f7a0;">
+                <div style="font-size:13px;color:#6a11cb;font-weight:600;margin-top:4px;">${top3[i].name}</div>
+            </div>
+        `;
+    }
+    document.getElementById('top3-labels').innerHTML += `<div style="margin-top:10px;">${imagesHtml}</div>`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     displayQuestion(0);
-    document.getElementById('result-container').classList.add('hidden');
+    document.getElementById('result-container').classList.add('hidden'); // Esto lo oculta al cargar
 });
+
+const characterDescriptions = {
+    "Hello Kitty": "Hello Kitty es una figura emblemática de amabilidad y optimismo. Siempre está dispuesta a ayudar a los demás, lo que la convierte en una amiga leal y confiable. Su personalidad amigable la hace popular entre todos, y su capacidad para escuchar y ofrecer apoyo la convierte en una confidente ideal.",
+    "My Melody": "My Melody es una conejita dulce y amable, aunque un poco tímida. Siempre busca hacer felices a los demás y es conocida por su gran corazón. Es una amiga cariñosa y comprensiva, que a menudo organiza actividades para alegrar a sus amigos.",
+    "Cinnamoroll": "Cinnamoroll es un perrito juguetón y amigable que siempre busca hacer nuevos amigos. Su naturaleza alegre y su deseo de ayudar lo convierten en un compañero encantador. Es muy sociable y disfruta de la compañía de otros, organizando juegos y actividades divertidas.",
+    "Chococat": "Chococat es un gato curioso e inteligente, siempre ansioso por aprender y compartir su conocimiento. Su personalidad inquisitiva lo lleva a hacer preguntas y a investigar diversos temas, lo que lo convierte en un buen amigo y compañero de estudio.",
+    "Tuxedo Sam": "Tuxedo Sam es un pingüino amigable y un poco torpe que disfruta de la buena comida y la diversión. Su carácter jovial lo hace popular entre sus amigos, aunque a veces su torpeza puede causar situaciones cómicas.",
+    "Pochacco": "Pochacco es un perro activo y divertido, amante de los deportes. Su energía contagiosa y su entusiasmo por la actividad física lo convierten en un amigo ideal para aquellos que disfrutan de un estilo de vida activo.",
+    "Kuromi": "Kuromi es traviesa y rebelde, pero también tiene un gran corazón. Su personalidad fuerte y su estilo único la hacen destacar entre sus amigos. Aunque a menudo actúa como una antagonista, es leal y siempre está dispuesta a ayudar a sus amigos cuando más lo necesitan.",
+    "Pompompurin": "Pompompurin es un golden retriever relajado y amigable que disfruta de la compañía de sus amigos. Su naturaleza tranquila y su amor por la diversión lo convierten en un compañero ideal para pasar el tiempo.",
+    "Keroppi": "Keroppi es una rana alegre y enérgica que siempre busca aventuras. Su espíritu aventurero y su entusiasmo lo hacen popular entre sus amigos, y siempre está dispuesto a explorar nuevos lugares.",
+    "Badtz-Maru": "Badtz-Maru es un pingüino rebelde y sarcástico, pero tiene un lado dulce que solo sus amigos más cercanos conocen. Su actitud desafiante y su sentido del humor lo convierten en un amigo divertido, aunque a veces puede ser un poco problemático."
+};
