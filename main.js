@@ -186,6 +186,7 @@ document.getElementById('next-button').onclick = function() {
         calculateScores();
         showResult();
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 document.getElementById('prev-button').onclick = function() {
@@ -193,6 +194,7 @@ document.getElementById('prev-button').onclick = function() {
         currentQuestion--;
         displayQuestion(currentQuestion);
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 document.getElementById('restart-button').onclick = function() {

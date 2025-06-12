@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Montserrat:wght@400;600&display=swap');
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     background: linear-gradient(135deg, #e0f7fa 0%, #f5fbff 100%);
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-bar, .bottom-bar {
@@ -29,6 +36,7 @@ body {
     border-radius: 22px;
     box-shadow: 0 6px 32px #007cf080;
     text-align: center;
+    flex: 1 0 auto;
 }
 
 h1, #question, .result-card h2 {
@@ -173,4 +181,8 @@ h1, #question, .result-card h2 {
         font-size: 1.1rem;
         padding: 12px 0;
     }
+}
+
+.bottom-bar {
+    flex-shrink: 0;
 }
