@@ -1,58 +1,59 @@
-# Sanrio Quiz App
+# Sanrio Quiz 
 
-Welcome to the Sanrio Quiz App! This interactive quiz allows users to discover which Sanrio character they are most like based on their answers to a series of fun questions.
+¡Bienvenido/a al **Sanrio Quiz**!  
+Este proyecto es un divertido test interactivo que te ayuda a descubrir **qué personaje de Sanrio eres** según tus gustos y personalidad.  
+Incluye imágenes, resultados personalizados y un gráfico de afinidad visual.
 
-## Project Structure
+---
 
-The project consists of the following files and directories:
+## 🚀 ¿Cómo funciona?
+
+1. **Responde preguntas** sobre tus colores, comidas, actividades y personalidad.
+2. **Elige tus opciones favoritas** (¡cada una tiene una imagen!).
+3. Al terminar, el quiz calcula tu afinidad con los personajes de Sanrio y te muestra:
+   - Tu personaje principal (con imagen y descripción).
+   - Un gráfico de porcentaje de afinidad.
+   - Los 3 personajes más afines contigo.
+
+---
+
+
+## 📂 Estructura del proyecto
 
 ```
-sanrio-quiz-app
-├── src
-│   ├── index.html        # Main HTML document for the quiz application
-│   ├── styles
-│   │   └── main.css      # CSS styles for the application
-│   ├── scripts
-│   │   └── app.js        # JavaScript logic for the quiz application
-│   └── assets
-│       └── images        # Images of the Sanrio characters
-├── README.md             # Documentation for the project
+sanrio_quiz/
+│
+├── assets/                # Imágenes de opciones y personajes
+├── index.html             # Página principal del quiz
+├── style.css              # Estilos visuales
+├── main.js                # Lógica del quiz y resultados
+└── README.md              # (Este archivo)
 ```
 
-## How to Run the Quiz Application
+---
 
-1. Clone the repository to your local machine.
-2. Open the `index.html` file in your web browser.
-3. Follow the on-screen instructions to complete the quiz.
-4. At the end of the quiz, you will receive a character card displaying your Sanrio character along with a description.
+## 🛠️ ¿Cómo usarlo?
 
-## Scoring System
+1. **Clona el repositorio** o descarga los archivos.
+2. Asegúrate de tener todas las imágenes necesarias en la carpeta `assets/`.
+3. Abre `index.html` en tu navegador favorito.
+4. ¡Disfruta el quiz y comparte tu resultado!
 
-- Each question has multiple image options representing different Sanrio characters.
-- Users select their preferred option for each question.
-- Points are tallied based on the selections, and at the end of the quiz, the character with the highest score will be displayed.
+---
 
-## Sanrio Characters
+## 💖 Créditos
 
-The quiz features the following Sanrio characters:
+- Inspirado en los personajes de **Sanrio**.
+- Hecho con cariño y mucha paciencia para Sinai.
+---
 
-1. Hello Kitty
-2. My Melody
-3. Cinnamoroll
-4. Pompompurin
-5. Keroppi
-6. Badtz-Maru
-7. Chococat
-8. Kuromi
-9. Pochacco
-10. Little Twin Stars
+## 📝 Notas
 
-Each character has unique traits and characteristics that will be described in the final result card.
+- Si quieres agregar más preguntas o personajes, solo edita el archivo `main.js`.
+- El diseño y la lógica están pensados para ser fáciles de modificar.
+- Si tienes dudas o quieres mejorar el quiz, ¡abre un issue o haz un pull request!
 
-## Contributing
+---
 
-Feel free to contribute to this project by submitting issues or pull requests. Your feedback and suggestions are welcome!
-
-## License
-
-This project is open-source and available under the MIT License.
+¡Gracias por probar el Sanrio Quiz!  
+✨ ¿Listo para descubrir tu personaje Sanrio? ✨
