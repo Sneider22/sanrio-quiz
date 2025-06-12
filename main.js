@@ -210,20 +210,6 @@ document.getElementById('restart-button').onclick = function() {
     displayQuestion(0);
 };
 
-document.getElementById('download-result').addEventListener('click', function() {
-    const resultContainer = document.getElementById('result-container');
-    html2canvas(resultContainer, {
-        backgroundColor: '#fff',
-        useCORS: true,
-        scale: 2
-    }).then(function(canvas) {
-        const link = document.createElement('a');
-        link.download = 'resultado_sanrio.png';
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-    });
-});
-
 function showResult() {
     document.getElementById('question-container').style.display = 'none';
     document.querySelector('.navigation-buttons').style.display = 'none';
