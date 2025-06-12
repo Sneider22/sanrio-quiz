@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        ¿Qué personaje de Sanrio eres?
+    </div>
+    <div class="quiz-container">
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <div id="options-container" class="options"></div>
+        </div>
+        <div class="navigation-buttons">
+            <button id="prev-button" class="button" type="button">Atrás</button>
+            <button id="next-button" class="button" type="button">Siguiente</button>
+        </div>
+        <div id="result-container" class="hidden">
+            <h2>Tu personaje es:</h2>
+            <div id="result-card" class="result-card">
+                <img id="result-image" src="" alt="Personaje Sanrio">
+                <h3 id="result-name"></h3>
+                <p id="result-description"></p>
+                <p id="result-percentage"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
