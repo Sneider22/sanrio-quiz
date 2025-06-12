@@ -29,12 +29,14 @@ const questions = [
     {
         question: "¿Cómo describes tu personalidad?",
         options: [
-            { answer: "Amigable", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 2, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Aventurero/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 2, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 1, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 2, "Badtz-Maru": 0 } },
-            { answer: "Inteligente y analítico/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 3, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Travieso/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 2, "Pochacco": 0, "Kuromi": 2, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 0 } },
-            { answer: "Enérgico/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 2, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 1, "Badtz-Maru": 0 } },
-            { answer: "Rebelde y divertido/a", points: { "Hello Kitty": 0, "My Melody": 0, "Cinnamoroll": 0, "Chococat": 0, "Tuxedo Sam": 0, "Pochacco": 0, "Kuromi": 0, "Pompompurin": 0, "Keroppi": 0, "Badtz-Maru": 3 } }
+            { answer: "Amigable", img: "amigable.png", points: { "Hello Kitty": 3, "My Melody": 3, "Cinnamoroll": 2.5, "Chococat": 2.5, "Tuxedo Sam": 2, "Pochacco": 2, "Kuromi": 1.5, "Pompompurin": 2.5, "Keroppi": 2.5, "Badtz-Maru": 1 } },
+            { answer: "Creativo/a", img: "creativo.png", points: { "Hello Kitty": 3, "My Melody": 3, "Cinnamoroll": 3, "Chococat": 3, "Tuxedo Sam": 2.5, "Pochacco": 1, "Kuromi": 2, "Pompompurin": 2, "Keroppi": 2, "Badtz-Maru": 1.5 } },
+            { answer: "Inteligente y analítico/a", img: "inteligente.png", points: { "Hello Kitty": 2, "My Melody": 1.8, "Cinnamoroll": 2, "Chococat": 3, "Tuxedo Sam": 2.5, "Pochacco": 1.5, "Kuromi": 2.5, "Pompompurin": 1, "Keroppi": 1.5, "Badtz-Maru": 2.5 } },
+            { answer: "Travieso/a", img: "travieso.png", points: { "Hello Kitty": 1, "My Melody": 1.5, "Cinnamoroll": 0.8, "Chococat": 0.8, "Tuxedo Sam": 1, "Pochacco": 3, "Kuromi": 2, "Pompompurin": 2, "Keroppi": 3, "Badtz-Maru": 2 } },
+            { answer: "Enérgico/a", img: "energico.png", points: { "Hello Kitty": 2, "My Melody": 2.5, "Cinnamoroll": 0.5, "Chococat": 2.5, "Tuxedo Sam": 2, "Pochacco": 3, "Kuromi": 1.5, "Pompompurin": 2, "Keroppi": 3, "Badtz-Maru": 1 } },
+            { answer: "Rebelde", img: "rebelde.png", points: { "Hello Kitty": 0.3, "My Melody": 0.3, "Cinnamoroll": 0.2, "Chococat": 1.5, "Tuxedo Sam": 0.5, "Pochacco": 2, "Kuromi": 2.5, "Pompompurin": 1, "Keroppi": 1, "Badtz-Maru": 3 } },
+            { answer: "Divertido/a", img: "divertido.png", points: { "Hello Kitty": 2, "My Melody": 2, "Cinnamoroll": 2, "Chococat": 2, "Tuxedo Sam": 1, "Pochacco": 2, "Kuromi": 2.5, "Pompompurin": 2, "Keroppi": 2, "Badtz-Maru": 3 } },
+            { answer: "Sarcastico/a", img: "sarcastico.png", points: { "Hello Kitty": 1, "My Melody": 0.5, "Cinnamoroll": 0.5, "Chococat": 2.5, "Tuxedo Sam": 1, "Pochacco": 1, "Kuromi": 3, "Pompompurin": 0.5, "Keroppi": 1, "Badtz-Maru": 3 } }
         ]
     },
     {
@@ -116,18 +118,25 @@ function displayQuestion(index) {
         optionDiv.className = 'option';
         optionDiv.onclick = () => toggleOption(index, i);
 
-        // Para colores
-        if (option.color) {
-            optionDiv.style.backgroundColor = option.color;
-            optionDiv.title = option.answer;
-        }
-        // Para comidas y demás
+        // Haz el div más alto
+        optionDiv.style.minHeight = '90px'; // antes era menos, ahora más alto
+        optionDiv.style.display = 'flex';
+        optionDiv.style.flexDirection = 'column';
+        optionDiv.style.alignItems = 'center';
+        optionDiv.style.justifyContent = 'center';
+
+        // Imagen más ancha y alta
         if (option.img) {
             const img = document.createElement('img');
             img.src = `assets/${option.img}`;
             img.alt = option.answer;
+            img.style.width = '80px';   // más ancho
+            img.style.height = '60px';  // más alto
+            img.style.objectFit = 'contain';
+            img.style.marginBottom = '8px';
             optionDiv.appendChild(img);
         }
+
         const label = document.createElement('span');
         label.textContent = option.answer;
         optionDiv.appendChild(label);
@@ -193,6 +202,19 @@ document.getElementById('prev-button').onclick = function() {
     }
 };
 
+document.getElementById('restart-button').onclick = function() {
+    // Reinicia variables
+    currentQuestion = 0;
+    answers = [];
+    for (let key in scores) scores[key] = 0;
+
+    // Oculta el resultado y muestra el quiz
+    document.getElementById('result-container').classList.add('hidden');
+    document.getElementById('question-container').style.display = '';
+    document.querySelector('.navigation-buttons').style.display = '';
+    displayQuestion(0);
+};
+
 function showResult() {
     document.getElementById('question-container').style.display = 'none';
     document.querySelector('.navigation-buttons').style.display = 'none';
@@ -237,7 +259,10 @@ function showResult() {
         },
         options: {
             plugins: {
-                legend: { display: false }
+                legend: { display: false },
+                title: {
+                    display: false // <--- Desactiva el título interno
+                }
             },
             cutout: '65%',
             responsive: false
