@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanrio Quiz</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🎮</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,19 +21,19 @@
             <button id="next-button" class="button" type="button">Siguiente</button>
         </div>
         <div id="result-container" class="hidden">
-            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; gap: 24px;">
-                <div class="result-card" style="flex: 1 1 320px; min-width: 260px; max-width: 380px; padding: 24px 18px;">
-                    <img id="result-main-img" src="" alt="" style="width:140px;height:140px;object-fit:contain;border-radius:22px;border:4px solid #a259f7;background:#fff;box-shadow:0 2px 16px #a259f7a0;display:block;margin:0 auto 18px auto;">
+            <div class="result-content-wrapper">
+                <div class="result-card">
+                    <img id="result-main-img" src="" alt="">
                     <h2>Tu personaje es: <span id="result-name"></span></h2>
                     <p id="result-description"></p>
                     <p id="result-percentage"></p>
                 </div>
-                <div style="flex: 1 1 220px; min-width: 220px; max-width: 320px;">
-                    <h3 id="chart-title" style="text-align:center;color:#6a11cb;font-size:20px;margin-bottom:10px;margin-top:24px;">
-                        Porcentaje de afinidad
-                    </h3>
-                    <canvas id="result-chart" width="220" height="220"></canvas>
-                    <div id="top3-labels" style="margin-top: 18px; text-align: center;"></div>
+                <div class="affinity-section">
+                    <div class="chart-container">
+                        <h3 id="chart-title">Porcentaje de afinidad</h3>
+                        <canvas id="result-chart" width="220" height="220"></canvas>
+                    </div>
+                    <div id="top3-labels" class="secondary-results"></div>
                 </div>
             </div>
             <button id="restart-button" class="button" type="button">

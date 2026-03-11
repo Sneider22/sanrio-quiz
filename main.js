@@ -125,8 +125,9 @@ function displayQuestion(index) {
 
         // Marca las opciones seleccionadas
         if (answers[index].includes(i)) {
-            optionDiv.style.outline = '3px solid #6a11cb';
-            optionDiv.style.boxShadow = '0 0 0 4px #e0c3fc';
+            optionDiv.classList.add('selected');
+            optionDiv.style.outline = '4px solid var(--primary-blue)';
+            optionDiv.style.boxShadow = '0 0 20px var(--shadow-color)';
         }
 
         // Contenedor para recuadro + nombre
@@ -234,8 +235,11 @@ function showResult() {
 
     // Imagen principal
     const mainImgName = resultCharacter.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') + '.png';
-    document.getElementById('result-main-img').src = `assets/${mainImgName}`;
-    document.getElementById('result-main-img').alt = resultCharacter;
+    const mainImg = document.getElementById('result-main-img');
+    mainImg.src = `assets/${mainImgName}`;
+    mainImg.alt = resultCharacter;
+    mainImg.style.display = 'block';
+    mainImg.style.margin = '0 auto 20px';
 
     // Gráfico de torta con los 3 principales
     const ctx = document.getElementById('result-chart').getContext('2d');
@@ -247,9 +251,9 @@ function showResult() {
             datasets: [{
                 data: top3.map(t => Math.round((t.value / totalPoints) * 100)),
                 backgroundColor: [
-                    '#a259f7', // morado
-                    '#6a11cb', // azul-morado
-                    '#4f8cff'  // azul
+                    '#007cf0', // primary blue
+                    '#00b4d8', // secondary blue
+                    '#48cae4'  // light blue
                 ],
                 borderWidth: 2
             }]
@@ -269,7 +273,7 @@ function showResult() {
     // Muestra los nombres y porcentajes de los otros dos personajes
     let labelsHtml = '';
     for (let i = 1; i < top3.length; i++) {
-        labelsHtml += `<div style="font-size:15px;color:#6a11cb;font-weight:600;margin-bottom:6px;">
+        labelsHtml += `<div style="font-size:16px;color:var(--primary-blue);font-weight:700;margin-bottom:12px;">
             ${i+1}. ${top3[i].name}: ${Math.round((top3[i].value / totalPoints) * 100)}%
         </div>`;
     }
@@ -280,9 +284,9 @@ function showResult() {
         // Convierte el nombre a minúsculas y reemplaza espacios por guiones bajos
         const imgName = top3[i].name.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') + '.png';
         imagesHtml += `
-            <div style="display:inline-block;margin:0 10px;text-align:center;">
-                <img src="assets/${imgName}" alt="${top3[i].name}" style="width:54px;height:54px;object-fit:contain;border-radius:12px;border:2px solid #a259f7;background:#fff;box-shadow:0 2px 8px #a259f7a0;">
-                <div style="font-size:13px;color:#6a11cb;font-weight:600;margin-top:4px;">${top3[i].name}</div>
+            <div style="display:inline-block;margin:10px;text-align:center;transition:transform 0.3s ease;" class="secondary-char-item">
+                <img src="assets/${imgName}" alt="${top3[i].name}" style="width:70px;height:70px;object-fit:contain;border-radius:15px;border:3px solid var(--secondary-cyan);background:#fff;box-shadow:0 4px 12px var(--shadow-color);">
+                <div style="font-size:14px;color:var(--primary-blue);font-weight:700;margin-top:8px;">${top3[i].name}</div>
             </div>
         `;
     }
