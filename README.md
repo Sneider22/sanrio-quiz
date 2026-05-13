@@ -33,7 +33,6 @@ Este es un quiz interactivo hecho en HTML, CSS y JavaScript puro, con resultados
 ## Créditos
 
 - Idea de Sinai ♥  
-- Desarrollado por [Tu Nombre o Nick]
 
 ---
 
